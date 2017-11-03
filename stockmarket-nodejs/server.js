@@ -29,8 +29,8 @@ function server()
 
   // appToken is the way Streamdata.io authenticates you as a valid user.
   // you MUST provide a valid token for your request to go through.
-  var appToken = '[YOUR_STREAMDATAIO_APP_TOKEN]';
-  var privateKey = '[YOUR_STREAMDATAIO_APP_PRIVATE_KEY]';
+  var appToken = '[mytoken]';
+  var privateKey = '[myKey]';
 
   eventSource =
     streamdataio.createEventSource(targetUrl, appToken, [], AuthStrategy.newSignatureStrategy(appToken, privateKey));
